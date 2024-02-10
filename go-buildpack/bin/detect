@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [[ ! -f "go.mod" ]]; then
+  echo "missing go.mod file"
+  exit 100
+fi
+
+if [[ ! -f "main.go" ]]; then
+  echo "missing main.go file"
+  exit 100
+fi
+
+exit 0
